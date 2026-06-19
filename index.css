@@ -1,328 +1,324 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     top: 0;
-    overflow-x: hidden;
 }
 
-html{
+html {
     font-size: 10px;
 }
 
-span{
+body {
+    height: auto;
+    background-image: linear-gradient(rgb(1, 20, 48), rgb(17, 0, 29));
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow-x: hidden;
+}
+
+span {
     color: rgb(134, 55, 207);
     font-weight: 600;
 }
 
-body{
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-image: linear-gradient(rgb(1, 20, 48), rgb(17, 0, 29));
-}
-
-.thur{
-    width: 110%;
-    max-width: 650px;
-    display: flex;
-    align-items: center;
-}
-
-.inicio{
-    width: 100vw;
-    height: auto;
+.inicio {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(0, 0, 0);
     align-items: center;
+    width: 100vw;
+    height: auto;
     padding: 2rem;
+    background-color: rgb(0, 0, 0);
 }
 
-.inicio img{
+.thur {
+    display: flex;
+    align-items: center;
+    width: 110%;
+    max-width: 650px;
+}
+
+.inicio img {
     width: 10%;
-    margin: 0rem 1rem;
+    margin: 0 1rem;
     padding: 0.2rem;
     border: 3px solid rgb(193, 134, 241);
-    background-color: rgb(27, 3, 49);
     border-radius: 100%;
+    background-color: rgb(27, 3, 49);
 }
 
-.inicio .dev{
+.inicio .dev {
+    color: white;
     font-size: 2rem;
     font-weight: 600;
-    color: white;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
     padding: 1rem;
 }
 
-.menu a{
-    color: white;
-    font-weight: 500;
-    font-size: 2rem;
-    text-decoration: none;
+.menu a {
     padding: 1rem;
     border: 1px solid white;
     border-radius: 10px;
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-.menu a:hover{
-    border: 1px solid rgb(102, 109, 253);
-    transform: scale(1.1);
-    color: rgb(102, 109, 253);
-    text-decoration: underline;
-}
-
-.sobre{
-    display: flex;
-    gap: 3rem;
-    justify-content: space-between;
-    padding: 5rem;
-    align-items: center;
-}
-
-.sobre .text{
-    font-size: 2rem;
     color: white;
-    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.sobre .text h2{
+.menu a:hover {
+    color: rgb(164, 67, 255);
+    border-color: rgb(164, 67, 255);
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem;
+}
+
+.sobre .text {
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+}
+
+.sobre .text h2 {
     font-size: 3rem;
 }
 
-.info{
-    width: 80%;
+.info {
+    width: 50%;
     height: auto;
     padding: 2rem 2.5rem;
-    align-items: center;
-    background-image: linear-gradient(#6A0DAD, #8A2BE2);
-    box-shadow: 0px 0px 15px rgb(102, 102, 102);
     border-radius: 1.5rem;
+    background-image: linear-gradient(#6a0dad, #8a2be2);
+    box-shadow: 0 0 15px rgb(102, 102, 102);
     color: white;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 400;
     transition: 0.3s;
 }
 
-.info:hover{
-    transform: scale(1.03);
+.info:hover {
+    transform: scale(1.02);
 }
 
-.info .app{
-    padding: 1rem;
-    width: 15%;
-    text-decoration: none;
-    transition: 0.2s;
-    margin: auto;
-}
-
-.ter{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    color: white;
-    align-items: center;
-}
-
-.ter img{
-    width: 3vw;
-}
-
-.apps{
-    padding: 1rem 0rem;
-    width: 500px;
-    align-items: center;
-    margin: auto;
-    overflow-y: hidden;
-}
-
-.imagem{
+.imagem {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
 }
 
-.info img{
-    border-radius: 100%;
+.info img {
     width: 50vw;
-}
-
-.info .app img{
-    width: 8%;
-    background-color: rgba(0, 0, 0, 0.651);
     border-radius: 100%;
-    transition: 0.3s;
-    margin: auto;
 }
 
-.info .app img:hover{
+.apps {
+    width: 500px;
+    padding: 1rem 0;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.info .app {
+    width: 15%;
+    margin: auto;
+    padding: 1rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.info .app img {
+    width: 8%;
+    margin: auto;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.651);
+    transition: 0.3s;
+}
+
+.info .app img:hover {
     transform: scale(1.1);
 }
 
-.serv hr{
+.ter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+    color: white;
+}
+
+.ter img {
+    width: 3vw;
+}
+
+.serv hr {
     width: 100vw;
     color: rgb(48, 44, 44);
 }
 
-.container img{
-    width: 15%;
-    padding: 1rem;
-    background-color: blueviolet;
-    border-radius: 10px;
-}
-
-.container{
-    width: 100vw;
-    color: white;
-    font-size: 1.5rem;
+.container {
     display: flex;
     justify-content: center;
     gap: 3rem;
-    padding: 7rem 0rem;
+    width: 100vw;
+    padding: 7rem 0;
+    color: white;
+    font-size: 1.5rem;
 }
 
-.card{
+.container img {
+    width: 15%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
+
+.card {
     width: 30%;
-    align-items: center;
-    border: 1.5px solid grey;
+    padding: 2rem;
     border-radius: 10px;
     background-color: rgb(5, 5, 5);
-    padding: 2rem;
+    align-items: center;
     cursor: default;
     transition: 0.3s;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-8px);
 }
 
-.final{
-    font-size: 1.6rem;
-    color: white;
-    text-align: center;
-    background-color: black;
+.final {
     width: 100vw;
+    padding: 3rem;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
     align-items: center;
     gap: 1rem;
-    padding: 3rem;
 }
 
-.final img{
+.final img {
     width: 1%;
 }
 
-@media (max-width: 480px){
-
-    html{
+@media (max-width: 480px) {
+    html {
         font-size: 10px;
     }
 
-    .sobre{
+    .inicio {
         flex-direction: column;
-        width: 100vw;
-        padding: 2rem 0;
-        margin: auto;
+        font-size: 2rem;
+    }
+
+    .inicio .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
         text-align: center;
     }
 
-    .menu a{
+    .inicio .thur {
+        flex-direction: column;
+    }
+
+    .inicio .thur img {
+        width: 80px;
+        margin: auto;
+    }
+
+    .menu {
+        position: relative;
+        right: 18px;
+        width: 100vw;
+        margin: auto;
+    }
+
+    .menu a {
         font-size: 3.5vw;
         font-weight: 600;
     }
 
-    .menu{
-        margin: auto;
-        width: 100vw;
-        position: relative;
-        right: 18px;
-    }
-
-    .info{
-        width: 90vw;
-        margin: auto;
+    .sobre {
         flex-direction: column;
+        width: 100vw;
+        margin: auto;
+        padding: 2rem 0;
+        text-align: center;
     }
 
-    .thur p{
+    .text h2 {
+        font-size: 2rem;
+    }
+
+    .thur p {
         padding: 1rem;
     }
 
-    .text h2{
-        font-size: 2rem;
-    }
-
-    .info .imagem{
+    .info {
+        width: 90vw;
+        margin: auto;
         flex-direction: column;
     }
 
-    .info .imagem img{
+    .info .imagem {
+        flex-direction: column;
+    }
+
+    .info .imagem img {
         width: 80px;
     }
 
-    .apps{
+    .apps {
+        position: relative;
+        right: 40px;
         width: 100vw;
         margin: auto;
         justify-content: center;
-        position: relative;
-        right: 40px;
     }
 
-    .apps .app img{
+    .apps .app img {
         width: 12%;
     }
 
-    .inicio{
-        flex-direction: column;
-        font-size: 2rem;
-    }
-
-    .inicio .menu{
-        padding: 2rem;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .inicio .thur{
-        flex-direction: column;
-    }
-
-    .inicio .thur img{
-        width: 80px;
-        margin: auto;
-    }
-
-    .ter img{
+    .ter img {
         width: 40px;
     }
 
-    .container{
-        font-size: 1.8rem;
+    .container {
         flex-direction: column;
-        margin: auto;
         gap: 5rem;
-    }
-
-    .card{
         margin: auto;
-        width: 90vw;
+        font-size: 1.8rem;
     }
 
-    .card img{
+    .card {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .card img {
         width: 40%;
     }
 
-    .final img{
+    .final img {
         width: 5vw;
     }
 }
