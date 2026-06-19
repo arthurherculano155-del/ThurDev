@@ -10,7 +10,7 @@ html{
 }
 
 span{
-    color: rgb(77, 0, 150);
+    color: rgb(134, 55, 207);
     font-weight: 600;
 }
 
@@ -32,7 +32,7 @@ body{
     height: auto;
     display: flex;
     justify-content: space-between;
-    background-color: blueviolet;
+    background-color: rgb(0, 0, 0);
     align-items: center;
     padding: 2rem;
 }
@@ -55,59 +55,69 @@ body{
 .menu{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
+    padding: 1rem;
 }
 
 .menu a{
     color: white;
     font-weight: 500;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: 2rem;
     text-decoration: none;
-    transition: 0.3s;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.2s;
     cursor: pointer;
 }
 
 .menu a:hover{
-    color: rgb(2, 10, 165);
+    border: 1px solid rgb(102, 109, 253);
+    transform: scale(1.1);
+    color: rgb(102, 109, 253);
     text-decoration: underline;
 }
 
 .sobre{
     display: flex;
     gap: 3rem;
-    background-color: rgb(153, 67, 233);
+    background-image: linear-gradient(grey, black);
     justify-content: space-between;
     padding: 10rem;
     align-items: center;
 }
 
 .sobre .text{
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: 1.6rem;
     color: white;
-    width: 50%;
+    width: 100%;
 }
 
 .info{
-    width: 50%;
+    width: 70%;
     height: auto;
     padding: 1.5rem 2rem;
-    background-color: rgb(207, 157, 255);
-    border-radius: 1rem;
+    align-items: center;
+    background-color: rgb(93, 18, 163);
+    box-shadow: 0px 0px 30px white;
+    border-radius: 1.5rem;
     color: white;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: 1.6rem;
 }
 
 .info .app{
-    padding: 0.8rem;
-    width: 10%;
+    padding: 1rem;
+    width: 15%;
     text-decoration: none;
     transition: 0.2s;
     margin: auto;
 }
 
 .apps{
+    width: 500px;
     align-items: center;
     margin: auto;
+    overflow-y: hidden;
 }
 
 .imagem{
@@ -134,49 +144,6 @@ body{
     transform: scale(1.1);
 }
 
-h1{
-    text-align: center;
-    font-size: 3rem;
-}
-
-.servicos{
-    align-items: center;
-    padding: 3rem;
-}
-
-.cards{
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 2.2rem;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 10rem 0rem;
-    gap: 3rem;
-}
-
-.card{
-    border: 3px solid rgb(0, 0, 0);
-    cursor: pointer;
-    border-radius: 10px;
-    align-items: center;
-    display: flex;
-    background-color: blueviolet;
-    color: white;
-    overflow: hidden;
-    font-weight: 600;
-    gap: 3rem;
-    transition: ease 0.3s;
-}
-
-.card p{
-    margin: 0 3rem;
-    text-align: none;
-}
-
-.card:hover{
-    transform: scale(1.1);
-}
-
 @media (max-width: 480px){
 
     html{
@@ -191,10 +158,26 @@ h1{
         text-align: center;
     }
 
+    .menu a{
+        font-size: 3.5vw;
+        font-weight: 600;
+    }
+
+    .menu{
+        margin: auto;
+        width: 100vw;
+        position: relative;
+        right: 18px;
+    }
+
     .info{
         width: 90vw;
         margin: auto;
         flex-direction: column;
+    }
+
+    .thur p{
+        padding: 1rem;
     }
 
     .text h2{
@@ -209,9 +192,16 @@ h1{
         width: 80px;
     }
 
+    .apps{
+        width: 100vw;
+        margin: auto;
+        justify-content: center;
+        position: relative;
+        right: 40px;
+    }
+
     .apps .app img{
         width: 12%;
-        margin-top: 5%;
     }
 
     .inicio{
@@ -232,23 +222,6 @@ h1{
     }
 
     .inicio .thur img{
-        width: 40px;
-    }
-
-    .card{
-        flex-direction: column;
-        width: 200px;
-        margin: auto;
-        font-size: 2rem;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .card:hover{
-        transform: translateY(-5px);
-    }
-
-    .cards{
-        margin: 2rem;
+        width: 80px;
     }
 }
