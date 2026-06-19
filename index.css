@@ -161,6 +161,7 @@ span {
     gap: 1rem;
     margin: auto;
     color: white;
+    margin-top: 2rem;
 }
 
 .ter img {
@@ -169,7 +170,7 @@ span {
 
 .serv hr {
     width: 100vw;
-    color: rgb(48, 44, 44);
+    color: rgb(255, 255, 255);
 }
 
 .container {
