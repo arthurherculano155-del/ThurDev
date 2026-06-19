@@ -321,4 +321,8 @@ body{
     .card img{
         width: 40%;
     }
+
+    .final img{
+        width: 5vw;
+    }
 }
