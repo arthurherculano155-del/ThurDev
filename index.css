@@ -18,6 +18,7 @@ body{
     height: auto;
     background-repeat: no-repeat;
     background-size: auto;
+    background-image: linear-gradient(rgb(1, 20, 48), rgb(17, 0, 29));
 }
 
 .thur{
@@ -81,9 +82,8 @@ body{
 .sobre{
     display: flex;
     gap: 3rem;
-    background-image: linear-gradient(grey, black);
     justify-content: space-between;
-    padding: 10rem;
+    padding: 5rem;
     align-items: center;
 }
 
@@ -123,6 +123,19 @@ body{
     margin: auto;
 }
 
+.ter{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    align-items: center;
+}
+
+.ter img{
+    width: 3vw;
+}
+
 .apps{
     padding: 1rem 0rem;
     width: 500px;
@@ -153,6 +166,58 @@ body{
 
 .info .app img:hover{
     transform: scale(1.1);
+}
+
+.serv hr{
+    width: 100vw;
+    color: rgb(48, 44, 44);
+}
+
+.container img{
+    width: 15%;
+    padding: 1rem;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+.container{
+    width: 100vw;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 7rem 0rem;
+}
+
+.card{
+    width: 30%;
+    align-items: center;
+    border: 1.5px solid grey;
+    border-radius: 10px;
+    background-color: rgb(5, 5, 5);
+    padding: 2rem;
+    cursor: default;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.final{
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    background-color: black;
+    width: 100vw;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.final img{
+    width: 1%;
 }
 
 @media (max-width: 480px){
@@ -235,5 +300,25 @@ body{
     .inicio .thur img{
         width: 80px;
         margin: auto;
+    }
+
+    .ter img{
+        width: 40px;
+    }
+
+    .container{
+        font-size: 1.8rem;
+        flex-direction: column;
+        margin: auto;
+        gap: 5rem;
+    }
+
+    .card{
+        margin: auto;
+        width: 90vw;
+    }
+
+    .card img{
+        width: 40%;
     }
 }
