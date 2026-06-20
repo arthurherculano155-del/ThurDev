@@ -3,6 +3,11 @@
     margin: 0;
     top: 0;
     overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
 }
 
 html {
@@ -155,10 +160,9 @@ span {
     overflow-y: hidden;
 }
 
-.info .app {
+.info .app{
     width: 15%;
     margin: auto;
-    padding: 1rem;
     text-decoration: none;
     transition: 0.2s;
 }

@@ -1,0 +1,218 @@
+html{
+    font-size: 10px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    top: 0; 
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;   
+}
+
+body{
+    overflow-x: hidden;
+    background-image: linear-gradient(rgb(1, 20, 48), rgb(17, 0, 29));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topo{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 200px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(231, 147, 252);
+
+}
+
+.bnt{
+    display: flex;
+    color: white;
+    background: none;
+    align-items: center;
+    border: 3px solid blueviolet;
+    width: 200px;
+    border-radius: 1000px;
+    font-weight: 600;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 1rem 0rem;
+    transition: 0.2s;
+}
+
+.bnt:hover{
+    transform: scale(1.05);
+}
+
+.bnt img{
+    width: 20%;
+}
+
+.topo img{
+    width: 15%;
+}
+
+.projetos h1{
+    color: white;
+    font-size: 3rem;
+}
+
+.projetos p{
+    color: rgb(219, 219, 219);
+    font-size: 1.3rem;
+}
+
+.proj{
+    width: 100%;
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    color: white;
+    font-size: 2.2rem;
+    flex-wrap: wrap;
+}
+
+.site{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin: 3rem 0rem;
+    gap: 2.5rem;
+    font-size: 2.6rem;
+}
+
+.card .img{
+    width: 100%;
+    box-shadow: 0px 0px 20px rgb(195, 135, 252);
+}
+
+.card .logo{
+    width: 20%;
+    background-color: blueviolet;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.card{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 3rem;
+    background-color: rgb(0, 0, 32);
+    cursor: default;
+    transition:  0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.tec{
+    display: flex;
+    gap: 1rem;
+    margin-top: 9rem;
+    align-items: center;
+    font-size: 1.6rem;
+    justify-content: space-between;
+}
+
+.tec p{
+    background-color: rgba(198, 145, 248, 0.123);
+    padding: 0.5rem;
+    font-weight: 600;
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+}
+
+.tec a{
+    width: 90px;
+    background-color: rgba(0, 0, 0, 0.288);
+    padding: 1rem;
+    border-radius: 10px;
+    float: right;
+    align-items: center;
+    transition: 0.25s;
+}
+
+.tec a:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+.tec a img{
+    width: 100%;
+}
+
+.final {
+    width: 100vw;
+    padding: 3rem;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.final img {
+    width: 1%;
+}
+
+@media (max-width: 480px){
+    html{
+        font-size: 10px;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .p{
+        text-align: justify;
+        margin: 2rem auto 0.5rem;
+        width: 80%;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card .logo{
+        width: 50px;
+    }
+
+    .card .site{
+        font-size: 2rem;
+    }
+
+    .card{
+        width: 90vw;
+    }
+
+    .tec p{
+        font-size: 1.3rem;
+    }
+
+    .bnt{
+        position: static;
+        margin: 3rem auto 1rem;
+        background: rgba(137, 43, 226, 0.432);
+    }
+
+    .final img {
+        width: 5vw;
+    }
+}
