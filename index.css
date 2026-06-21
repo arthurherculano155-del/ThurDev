@@ -240,6 +240,16 @@ span {
     gap: 1rem;
 }
 
+.final a{
+    color: rgb(98, 0, 255);
+    font-weight: 800;
+    padding: 1rem;
+    background: none;
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+    font-size: 1.8rem;
+}
+
 .final img {
     width: 1%;
 }

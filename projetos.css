@@ -20,6 +20,11 @@ body{
     background-size: cover;
 }
 
+span {
+    color: rgb(176, 92, 255);
+    font-weight: 900;
+}
+
 .topo{
     display: flex;
     gap: 1rem;
@@ -34,7 +39,7 @@ body{
 .bnt{
     display: flex;
     color: white;
-    background: none;
+    background: rgba(137, 43, 226, 0.432);
     align-items: center;
     border: 3px solid blueviolet;
     width: 200px;
@@ -61,6 +66,7 @@ body{
 .projetos h1{
     color: white;
     font-size: 3rem;
+    font-weight: 400;
 }
 
 .projetos p{
@@ -95,6 +101,8 @@ body{
 
 .card .img{
     width: 100%;
+    height: 26vh;
+    border-radius: 10px;
     box-shadow: 0px 0px 20px rgb(195, 135, 252);
 }
 
@@ -106,7 +114,7 @@ body{
 }
 
 .card{
-    width: 25vw;
+    width: 27vw;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -130,21 +138,34 @@ body{
 }
 
 .tec p{
-    background-color: rgba(198, 145, 248, 0.123);
     padding: 0.5rem;
     font-weight: 600;
-    border: 3px solid blueviolet;
     border-radius: 10px;
 }
 
+.css{
+    background-color: rgba(1, 250, 237, 0.63);
+    border: 3px solid rgb(0, 26, 255);
+}
+
+.javascript{
+    background-color: rgba(246, 250, 1, 0.63);
+    border: 3px solid rgb(229, 255, 0);
+}
+
+.html{
+    background-color: rgba(250, 171, 1, 0.63);
+    border: 3px solid rgb(255, 187, 0);
+}
+
 .tec a{
-    width: 90px;
+    width: 40px;
     background-color: rgba(0, 0, 0, 0.288);
     padding: 1rem;
     border-radius: 10px;
     float: right;
     align-items: center;
-    transition: 0.25s;
+    transition:  0.25s;
 }
 
 .tec a:hover{
@@ -165,6 +186,16 @@ body{
     text-align: center;
     align-items: center;
     gap: 1rem;
+}
+
+.final a{
+    color: rgb(98, 0, 255);
+    font-weight: 800;
+    padding: 1rem;
+    background: none;
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+    font-size: 1.8rem;
 }
 
 .final img {
@@ -209,7 +240,6 @@ body{
     .bnt{
         position: static;
         margin: 3rem auto 1rem;
-        background: rgba(137, 43, 226, 0.432);
     }
 
     .final img {
