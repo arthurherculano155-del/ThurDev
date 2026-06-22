@@ -123,11 +123,11 @@ span {
     padding: 3rem;
     background-color: rgb(0, 0, 32);
     cursor: default;
-    transition:  0.3s;
+    transition:  ease-out 0.3s;
 }
 
 .card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-10px) scale(1.02);
 }
 
 .tec{
