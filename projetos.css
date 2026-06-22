@@ -50,6 +50,7 @@ span {
     gap: 1rem;
     margin: 3rem 1rem 0rem;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .bnt:hover{

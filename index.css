@@ -115,6 +115,7 @@ span {
     font-size: 1.6rem;
     margin: 2.5rem 0rem;
     transition: 0.4s;
+    cursor: pointer;
 }
 
 .bntt:hover{
