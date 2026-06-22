@@ -224,7 +224,7 @@ span {
     background-color: rgb(5, 5, 5);
     align-items: center;
     cursor: default;
-    transition: 0.3s;
+    transition: ease-out 0.3s;
 }
 
 .card:hover {
