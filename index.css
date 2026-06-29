@@ -151,7 +151,7 @@ span {
 }
 
 .info img {
-    width: 50vw;
+    width: 100%;
     border-radius: 100%;
 }
 
@@ -324,7 +324,7 @@ span {
     }
 
     .info .imagem img {
-        width: 80px;
+        width: 120px;
     }
 
     .apps {
